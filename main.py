@@ -187,7 +187,40 @@ for number in range(1,101):
     if is_number(number):
         print(number, end=" ")
 
+#Exercice 17: Écrivez un programme qui demande à l’utilisateur une phrase et compte le nombre de mots dans cette phrase.
 
+A = input("the sentence: ")
+
+B = A.split()
+
+print(len(B))
+
+#Exercice 18: Écrivez un programme qui génère un triangle de nombres comme suit
+
+n = int(input("the number: "))
+for i in range(1,n):
+    for u in range(1,i):
+        print(u, end="")
+    print(i)
+
+#Exercice 19: Écrivez un programme qui demande à l’utilisateur une liste de nombres et affiche la somme de ces nombres.
+
+def somme(u):
+    _u = 0
+    for i in u:
+        _u += i
+    print(_u)
+
+u = []
+
+for i in range(3):
+    o = int(input("number: "))
+    u.append(o)
+print(u)
+
+print(somme(u))
+
+#Exercice 20: Écrivez un programme qui demande à l’utilisateur une série de nombres et affiche le plus grand nombre saisi.
 
 
 
