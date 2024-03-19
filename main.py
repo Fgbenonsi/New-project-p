@@ -175,6 +175,17 @@ else:
 
 #Exercice 16: Écrivez un programme qui affiche tous les nombres premiers entre 1 et 100.
 
+def is_number(number):
+    if number <= 1:
+        return False
+
+    for i in range(2, int(number ** 0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
+for number in range(1,101):
+    if is_number(number):
+        print(number, end=" ")
 
 
 
