@@ -144,4 +144,40 @@ while Guess <= limit:
 else:
     print("Done")
 
+#Exercice 13: Écrivez un programme qui calcule et affiche les premiers n termes de la suite de Fibonacci.
+
+n = int(input("number: "))
+a=0
+b=1
+for i in range(n):
+    a,b = b,a + b
+    print(a,)
+
+#Exercice 14: Écrivez un programme qui demande à l’utilisateur une chaîne de caractères et compte le nombre de voyelles dans cette chaîne.
+
+r = input("Str: ")
+voyelles = "eyioaEIOYA"
+count = 1
+for c in r:
+    if c in voyelles:
+        count+=1
+print(count)
+
+#Exercice 15: Écrivez un programme qui vérifie si une chaîne de caractères est un palindrome (elle se lit de la même manière de gauche à droite et de droite à gauche).
+
+A = input("Str: ")
+B = A[::-1]
+
+if A == B:
+    print("the words is a palindrome")
+else:
+    print("the words is not a palindrome")
+
+#Exercice 16: Écrivez un programme qui affiche tous les nombres premiers entre 1 et 100.
+
+
+
+
+
+
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
