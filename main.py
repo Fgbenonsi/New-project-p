@@ -222,6 +222,40 @@ print(somme(u))
 
 #Exercice 20: Écrivez un programme qui demande à l’utilisateur une série de nombres et affiche le plus grand nombre saisi.
 
+List = []
+Limit_of_number = int(input("Limit: "))
+set=0
+for i in range(Limit_of_number):
+    The_number = int(input("Please, enter a number: "))
+    b.append(The_number)
+    set+=1
+print(List)
 
+Max_list = max(List)
+
+print(Max_list)
+
+#Exercice 21: Écrivez un programme qui affiche les premiers n termes de la séquence de puissances de 2: 1,2,4,8,16,...
+
+Index = int(input("num: "))
+
+for i in range(Index):
+    Suit = 2 ** i
+    i+=1
+    print(Suit)
+
+#Exercice 22: Écrivez un programme qui demande à l’utilisateur une liste de nombres et affiche le plus petit nombre saisi.
+
+List = []
+
+for i in range(3):
+    number = float(input("Give a number: "))
+    List.append(number)
+    i+=1
+print(List)
+
+Min_List = min(List)
+
+print(Min_List)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
