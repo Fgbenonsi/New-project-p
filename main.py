@@ -258,4 +258,74 @@ Min_List = min(List)
 
 print(Min_List)
 
+#Exercice 23: Écrivez un programme qui affiche la table de multiplication de tous les nombres de 1 a 10
+
+for i in range(1,11):
+    for u in range(13):
+        p = i * u
+        print(f"{i} X {u} = {p}")
+        u += 1
+    print()
+
+#Exercice 24: Écrivez un programme qui demande à l’utilisateur une liste de mots et affiche le mot le plus long saisi.
+
+List = []
+
+number_words = int(input("Number: "))
+
+for i in range(number_words):
+    words = input("the words: ")
+    List.append(words)
+    i+=1
+print(List)
+
+max_list = float("-inf")
+for o in List:
+    if len(o) > max_list:
+        max_list = len(o)
+        T = o
+print(T)
+
+#Exercice 25: Écrivez un programme qui demande à l’utilisateur une liste de nombres et affiche la moyenne de ces nombres.
+
+List_number = input("Numbers: ")
+u = List_number.split()
+e = 0
+for s in u:
+    p = float(s)
+    e = e + p
+print(e / len(u))
+
+#Exercice 26: Écrivez un programme qui demande à l’utilisateur un nombre et affiche la table de multiplication pour ce nombre de 1 à 10.
+
+number = int(input("the number: "))
+print(f"Multiplication table of {number} is:")
+for i in range(11):
+    p = number * i
+    print(f"{number} X {i} = {p}")
+    i += 1
+print()
+
+#Exercice 27: Écrivez un programme qui demande à l’utilisateur une phrase et affiche le nombre de mots dans cette phrase
+
+Sentence = input("the sentence: ")
+
+words = Sentence.split()
+
+print(len(words))
+
+#Exercice 28: Écrivez un programme qui génère un carré de nombres comme suit: 12345 12345 12345
+
+Numbers = int(input("Num: "))
+for k in range(1, Numbers + 1):
+    for i in range(1, Numbers + 1):
+        print(i, end="")
+    print()
+
+#Exercice 29: Écrivez un programme qui demande à l’utilisateur un nombre et affiche s’il est premier ou non. Utilise def pour utiliser une function.
+
+
+
+
+
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
