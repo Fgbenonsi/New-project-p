@@ -324,6 +324,44 @@ for k in range(1, Numbers + 1):
 
 #Exercice 29: Écrivez un programme qui demande à l’utilisateur un nombre et affiche s’il est premier ou non. Utilise def pour utiliser une function.
 
+def is_prime(number):
+    if number <= 1:
+        return False
+    elif number <= 3:
+        return True
+    elif number <= 5:
+        return True
+    elif number % 2 == 0 or number % 3 == 0 or number % 5 == 0:
+        return False
+
+
+number = int(input("The number: "))
+
+if is_prime(number):
+    print(f"the number {number} is a prime number")
+else:
+    print(f"the number {number} is a not prime number")
+
+
+#Exercice 30: Écrivez un programme qui vérifie si une chaîne de caractères est un pangramme (contient toutes les lettres de l’alphabet au moins une fois).
+
+chain = input("chain: ")
+
+letters = "qwertyuiopasdfghjklzxcvbnm"
+
+limit = 0
+Count = True
+
+for letter in letters:
+    if letter in chain and len(chain) >= len(letters):
+        continue
+    elif not letter in chain or len(chain) > len(letters):
+        print(f"the letter {letter} is not in the chain or the chain is short")
+    elif not letter in chain or len(chain) < len(letters):
+        print(f"the letter {letter} is not in the chain")
+    limit+=1
+print("Pangramme")
+
 
 
 
