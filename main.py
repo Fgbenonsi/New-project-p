@@ -362,6 +362,65 @@ for letter in letters:
     limit+=1
 print("Pangramme")
 
+#Exercice 31: Écrivez un programme qui demande à l’utilisateur un nombre et affiche la somme de ses chiffres.
+
+NUMBER = input("Number: ")
+i = 0
+
+for n in NUMBER:
+    i += int(n)
+print(i)
+
+#Exercice 32: Écrivez un programme qui demande à l’utilisateur une série de nombres et affiche le nombre de nombres pairs et le nombre de nombres impairs saisis.
+
+even = 0
+odd = 0
+
+while True:
+    number = int(input("N: "))
+    if number == 0:
+         break
+    if number % 2 == 0:
+        even += 1
+    else:
+        odd += 1
+print(even)
+print(odd)
+
+#Exercice 33: Écrivez un programme qui demande à l’utilisateur une chaîne de caractères et affiche la même chaîne sans les voyelles.
+
+Chain = input("Chain: ")
+
+print(Chain.translate({ord(i): None for i in 'eiuoya'}))
+
+#Exercice 34: Écrivez un programme qui demande à l’utilisateur un nombre et affiche la factorielle de ce nombre.
+
+import math
+def fact(U):
+    print(math.factorial(U))
+
+
+U = int(input("N: "))
+
+if fact(U):
+    print(fact(U))
+
+#Exercice 35: Écrivez un programme qui demande à l’utilisateur un nombre et affiche s’il est un nombre parfait (somme de ses diviseurs propres égale au nombre).
+
+def perf(n):
+    sum = 0
+    for i in range(1, n):
+        if n % i == 0:
+            sum += i
+    return sum == n
+
+
+n = int(input("Number : "))
+if perf(n):
+    print(n,"is a perfect number.")
+else:
+    print(n,"is not a perfect number.")
+
 
 
 
