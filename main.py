@@ -421,6 +421,123 @@ if perf(n):
 else:
     print(n,"is not a perfect number.")
 
+#Exercice 36: Écrivez un programme qui demande à l’utilisateur un nombre et affiche le carré de ce nombre.
+
+def squ(n):
+    f = (n) ** 2
+    return (f)
+
+
+n = int(input("number: "))
+if squ(n):
+    print("the square of the number is: ", squ(n))
+
+
+#Exercice 37:Écrivez un programme qui demande à l’utilisateur un nombre et affiche les diviseurs de ce nombre.
+
+def di(u):
+    for i in range(100):
+        if u % i == 0:
+            print(i, end= " ")
+
+
+u = int(input("number: "))
+
+if di(u):
+    print(di(u))
+
+#Exercice 38: Écrivez une fonction qui prend en entrée une liste de nombres et retourne la somme de tous les éléments.
+
+u = input("Numbers: ")
+
+a = u.split()
+r = 0
+for i in a:
+    e = int(i)
+    r += e
+print("the somme of numbers in the list is :", r)
+
+
+#Exercice 39: Écrivez une fonction qui prend en entrée une liste de nombres et retourne la liste triée dans l’ordre croissant.
+
+def sorting(n):
+    return sorted(n)
+
+
+L = [23, 45, 63, 89, 57, 8]
+M = sorting(L)
+
+print("the sorted list provided is: ", M)
+
+#Exercice 40: Écrivez une fonction qui prend en entrée une chaîne de caractères et retourne le nombre de voyelles qu’elle contient.
+
+o = input("Words: ")
+
+a = "eyuioa"
+u = 0
+for i in a:
+    if i in o:
+        u += 1
+print(u)
+
+#Exercice 41: Écrivez une fonction qui prend en entrée une liste de nombres et retourne la liste des carrés de ces nombres.
+
+def fnt(n):
+    l =[]
+    for i in n:
+        o = i ** 2
+        l.append(o)
+    return (l)
+
+
+n = [23, 45, 5, 77, 88, 9]
+m = fnt(n)
+print(m)
+
+
+#Exercice 42: Écrivez une fonction qui prend en entrée une liste de mots et retourne la liste des mots inversés. ( lettres des mots compris)
+
+def rt(n):
+    A = n[::-1]
+    return(A)
+
+
+n = ['ryeu', 'he', 'hhge', 839]
+A = rt(n)
+print(A)
+
+#Exercice 43: Écrivez une fonction qui prend en entrée une liste de nombres et retourne la liste des éléments pairs.
+
+def par(n):
+    a = []
+    u = 0
+    for i in n:
+        if i % 2 == 0:
+            a.append(i)
+    return(a)
+
+n = [234,563,765,89,64,32,24,65,88,79]
+a = par(n)
+print(a)
+
+#Exercice 44: Écrivez une fonction qui prend en entrée une liste de mots et retourne la liste des mots de longueur supérieure à une valeur donnée.
+
+def fab(n,l):
+    m = []
+    for i in n:
+        if len(i) <= l:
+            pass
+        else:
+            m.append(i)
+    print(m)
+
+
+n = ["hgfd","kgoiuytreasdfg","kgfddkewsrt","gfdsyui07tre"]
+l = 8
+print(fab(n,l))
+
+#Exercice 45: Écrivez une fonction qui prend en entrée une liste de nombres et retourne la liste des éléments uniques (sans doublons).
+
 
 
 
